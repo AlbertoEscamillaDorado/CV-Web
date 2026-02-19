@@ -1,0 +1,49 @@
+.fotomia {
+	width: 400px;
+	height: auto;
+	float: right;
+	margin: 15px 10%;
+}
+main {
+	flex: 1;
+}
+.title {
+	font-size: 40px;
+	text-align: center;
+}
+.container {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	margin: 15px 10%;
+}
+.col {
+	flex: 1;
+}
+.col div {
+	padding-left: 10px;
+}
+.col h1 {
+	font-weight: bold;
+}
+.col h2 {
+	padding-left: 10px;
+	font-weight: lighter;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+.separador {
+	border: 0;
+	border-top: 2px solid #333;
+	width: 50%;
+	margin: 20px auto;
+}
+.linea-vertical {
+	height: 500px;
+	width: 2px;
+	background-color: black;
+	margin: 0 auto;
+}
