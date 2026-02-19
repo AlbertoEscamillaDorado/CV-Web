@@ -1,7 +1,46 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import '../styles/global.css';
+import "../styles/global.css";
 ---
-<Layout>
 
+<Layout>
+    <main>
+        <h1 class="title">Aptitudes</h1>
+        <hr class="separador" />
+        <div class="container">
+            <div class="col">
+                <h1>Habilidades técnicas:</h1>
+                <ul>
+                    <li>Desarrollo de aplicaciones multiplataforma</li>
+                    <li>Desarrollo de aplicaciones web</li>
+                    <li>Creacion y configuracion de bases de datos relacionales y no relacionales</li>
+                    <li>Montaje y reparación de equipos informáticos</li>
+                    <li>Instalación y configuración de sistemas operativos</li>
+                    <li>Gestión de proyectos en equipo</li>
+                </ul>
+            </div>
+            <div class="linea-vertical"></div>
+            <div class="col">
+                <h1>Habilidades personales:</h1>
+                <ul>
+                    <li>Trabajo en equipo</li>
+                    <li>Organización y gestión del tiempo</li>
+                    <li>Comunicación efectiva</li>
+                    <li>Adaptabilidad y aprendizaje continuo</li>
+                </ul>
+            </div>
+        </div>
+    </main>
 </Layout>
+
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .col {
+        padding: 10px;
+    }
+</style>
