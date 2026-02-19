@@ -12,6 +12,9 @@
 	filter: blur(0px);
 	transition:all .5s ease-in-out;
 }
+li {
+	font-size: large;
+}
 main {
         display: flex;
         flex-direction: column;

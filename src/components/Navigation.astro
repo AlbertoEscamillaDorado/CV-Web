@@ -3,26 +3,26 @@ const currentPath = Astro.url.pathname;
 ---
 <div id="main-menu">
     <button 
-        class={`raise ${currentPath === "/" ? "active" : ""}`} 
-        onclick="window.location.href='/'">
+        class={`raise ${currentPath === "/CV-Web/" ? "active" : ""}`} 
+        onclick="window.location.href='/CV-Web/'">
         Contacto
     </button>
 
     <button 
-        class={`raise ${currentPath === "/formacion" ? "active" : ""}`} 
-        onclick="window.location.href='/formacion'">
+        class={`raise ${currentPath === "/CV-Web/formacion" ? "active" : ""}`} 
+        onclick="window.location.href='/CV-Web/formacion'">
         Formacion
     </button>
 
     <button 
-        class={`raise ${currentPath === "/experiencia" ? "active" : ""}`} 
-        onclick="window.location.href='/experiencia'">
+        class={`raise ${currentPath === "/CV-Web/experiencia" ? "active" : ""}`} 
+        onclick="window.location.href='/CV-Web/experiencia'">
         Experiencia
     </button>
 
     <button 
-        class={`raise ${currentPath === "/aptitudes" ? "active" : ""}`} 
-        onclick="window.location.href='/aptitudes'">
+        class={`raise ${currentPath === "/CV-Web/aptitudes" ? "active" : ""}`} 
+        onclick="window.location.href='/CV-Web/aptitudes'">
         Aptitudes
     </button>
 </div>
