@@ -1,18 +1,23 @@
 ---
-import Navigation from './Navigation.astro';
+import Menu from "./Menu.astro";
+import Navigation from "./Navigation.astro";
 ---
 
 <header>
   <nav>
+    <Menu />
     <Navigation />
   </nav>
-</header> 
+</header>
 <style>
-    header {
-        background-color: #0B3C5D;
-        padding: 1rem;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
+  header {
+    background-color: #0b3c5d;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+  }
 </style>

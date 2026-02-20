@@ -1,12 +1,11 @@
 .fotomia {
-	width: 400px;
+	width: 350px;
 	height: auto;
-	float: right;
-	margin: 15px 10%;
-}
-.fotomia {
 	transition:all .5s ease-in-out;
 	filter: blur(10px);
+	align-content: center;
+	border: black solid 1px;
+	border-radius: 10px;
 }
 .fotomia:hover {
 	filter: blur(0px);
@@ -22,15 +21,14 @@ li:hover {
 	transition:all .5s ease-in-out;
 }
 .main-content {
-	margin: 50px;
-	min-height: 700px;
+	margin: 2vh;
+	min-height: 72vh;
 	padding: 10px;
 	align-items: center;
 	border: black solid 2px;
 	border-radius: 15px;
 	background-color:#5fb7f1 ;
 	box-shadow: #333 -10px 10px 20px;
-	overflow: scroll;
 }
 main {
         display: flex;
@@ -49,6 +47,8 @@ main {
 }
 .container {
 	display: flex;
+	height: auto;
+	width: 80%;
 	gap: 20px;
 	align-items: center;
 	margin: 15px 10%;
@@ -83,6 +83,14 @@ img {
 	background-color: black;
 	margin: 0 auto;
 }
+:has(#menu[aria-expanded="true"]) .nav-links {
+  display: unset;
+}
+.nav-links {
+  display: none;
+  width: 100%;
+  margin: 0;
+}
 
 /* animaciones */
 .raise.active {
@@ -105,12 +113,35 @@ button {
   -webkit-transition: 0.25s;
   transition: 0.25s;
   border-radius: 10px;
-}
-button {
 	background-color: white;
   border: 2px solid;
   font: inherit;
   line-height: 1;
   margin: 0.5em;
   padding: 1em 2em;
+}
+@media (max-width: 650px) {
+	.container {
+		flex-direction: column;
+		width: 100%;
+	}
+	.linea-vertical {
+		display: none;
+	}
+	
+}
+@media screen and (min-width: 650px) {
+	.nav-links {
+    	display: block;
+    	position: static;
+    	width: auto;
+    	background: none;
+  	}
+  	.nav-links button{
+   		display: inline-block;
+    	padding: 15px 20px;
+  	}
+	#menu {
+		display:none;
+	}
 }
