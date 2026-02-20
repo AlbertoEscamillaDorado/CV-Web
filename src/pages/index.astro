@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
+const base = import.meta.env.BASE_URL;
 ---
 
 <Layout>
@@ -9,7 +10,7 @@ import "../styles/global.css";
 		<hr class="separador" />
 		<div class="container">
 			<div class="col">
-				<img src="/CV-Web/public/images/fotomia.png" alt="foto mia" class="fotomia" />
+				<img src={`${base}images/fotomia.png`} alt="foto mia" class="fotomia" />
 			</div>
 			<div class="linea-vertical"></div>
 			<div class="col">
