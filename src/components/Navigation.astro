@@ -1,7 +1,7 @@
 ---
 const currentPath = Astro.url.pathname;
 ---
-<div id="main-menu">
+<div class="nav-links">
     <button 
         class={`raise ${currentPath === "/CV-Web/" ? "active" : ""}`} 
         onclick="window.location.href='/CV-Web/'">
@@ -26,15 +26,3 @@ const currentPath = Astro.url.pathname;
         Aptitudes
     </button>
 </div>
-<style>
-    div {
-        display: flex;
-        gap: 1rem;
-    }
-    a {
-        font-size: 30px;
-        color: white;
-        text-decoration: none;
-        padding: 0px 50px;
-    }
-</style>
