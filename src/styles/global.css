@@ -97,7 +97,7 @@ img {
 }
 .raise {
   --color: #2FA4E7;
-  --hover: #00B4FF;
+  --hover: hsl(180 100% 50%);
 }
 button {
   color: var(--color);
