@@ -1,9 +1,10 @@
 ---
 const { platform, username } = Astro.props;
+const base = import.meta.env.BASE_URL;
 ---
 
 <a href={`https://www.${platform}.com/${username}`}>
-    <img src={`/CV-Web/public/images/${platform}-logo.png`} alt={`Logo de ${platform}`} />
+    <img src={`${base}images/${platform}-logo.png`} alt={`Logo de ${platform}`} />
     {platform}
 </a>
 
