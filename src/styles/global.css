@@ -14,6 +14,22 @@
 }
 li {
 	font-size: large;
+	transition:all .5s ease-in-out;
+}
+li:hover {
+	color: #9e0c0c;
+	font-size: xx-large;
+	transition:all .5s ease-in-out;
+}
+.main-content {
+	min-height: 700px;
+	margin: 30px 300px;
+	align-items: center;
+	border: black solid 2px;
+	border-radius: 15px;
+	background-color:#5fb7f1 ;
+	box-shadow: #333 -10px 10px 20px;
+	
 }
 main {
         display: flex;
@@ -23,6 +39,12 @@ main {
 .title {
 	font-size: 40px;
 	text-align: center;
+	transition:all .5s ease-in-out;
+}
+.title:hover {	
+	color: #581818;
+	transition:all .5s ease-in-out;
+	font-size: 55px;
 }
 .container {
 	display: flex;
@@ -81,6 +103,7 @@ button {
   color: var(--color);
   -webkit-transition: 0.25s;
   transition: 0.25s;
+  border-radius: 10px;
 }
 button {
 	background-color: white;
